@@ -1,9 +1,9 @@
 # ForceAutoHDR
 
 
-- Add Games To `AutoHDR` List In Registry Easily using GUI By Choosing Game Executables.
-- Remove `Games` Easily using Drop Down Menu.
-- Registry Entries will be added and removed Automatically for you.
+- Add games to `AutoHDR` list In Registry easily using GUI by choosing game executables from filedialog.
+- Remove `Games` easily using Drop Down Menu.
+- Registry entries will be added and removed automatically for you.
 
 
 
@@ -12,5 +12,6 @@
 
 
 
-# Notice:
-To make sure Auto HDR Is working open `Xbox Game Bar` open `HDR Intensity Slider` and move it around If the brightness keeps shifting means It's working.
+# Usage:
+1. Enable HDR Manually In Windows 11.
+2. To make sure Auto HDR Is working open `Xbox Game Bar` open `HDR Intensity Slider` and move it around If the brightness keeps shifting means It's working.
