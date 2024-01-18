@@ -1,8 +1,8 @@
 # ForceAutoHDR
 
 
-- Add Games To AutoHDR List In Registry Easily using GUI By Choosing Game Executables.
-- Remove Games Easily using Drop Down Menu.
+- Add Games To `AutoHDR` List In Registry Easily using GUI By Choosing Game Executables.
+- Remove `Games` Easily using Drop Down Menu.
 - Registry Entries will be added and removed Automatically for you.
 
 
