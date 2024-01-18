@@ -88,7 +88,7 @@ def is_admin():
         return ctypes.windll.shell32.IsUserAnAdmin()
     except:
         return False
-def vcache_delete_registry_key(key_name):
+def delete_registry_key(key_name):
     global keys_drop
     path = r"Software\Microsoft\Direct3D"
     i = messagebox.askyesno(title="Warning.",
@@ -141,7 +141,7 @@ add_button.place(relx=0.5, rely=0.65, anchor=customtkinter.CENTER)
 delete_button = customtkinter.CTkButton(master=app, text="Delete Game EXE",
                                         command=
                                         lambda: threading.Thread(
-                                            target=lambda: vcache_delete_registry_key(keys_drop.get()),
+                                            target=lambda: delete_registry_key(keys_drop.get()),
                                                                          daemon=True).start())
 delete_button.place(relx=0.5, rely=0.80, anchor=customtkinter.CENTER)
 app.mainloop()
