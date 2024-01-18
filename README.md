@@ -6,4 +6,5 @@
 - Registry Entries will be added and removed Automatically for you.
 
 
-![forcegui](https://github.com/7gxycn08/ForceAutoHDR/assets/121936658/8a9abc21-2eb6-4274-946a-06c2042d8e8c)
+
+![forcegui](https://github.com/7gxycn08/ForceAutoHDR/assets/121936658/8f62b984-d146-4b3e-a8ea-8ce99d834f91)
