@@ -33,7 +33,7 @@ VSVersionInfo(
         [StringStruct(u'CompanyName', u'7gxycn08@github.com'),
         StringStruct(u'FileDescription', u'Force AutoHDR In Unsupported Games.'),
         StringStruct(u'FileVersion', u'1.0.0.7'),
-        StringStruct(u'InternalName', u'Classic Mixer'),
+        StringStruct(u'InternalName', u'ForceAutoHDR'),
         StringStruct(u'LegalCopyright', u'© 7gxycn08@github.com All rights reserved.'),
         StringStruct(u'OriginalFilename', u'ForceAutoHDR.exe'),
         StringStruct(u'ProductName', u'Force Auto HDR'),
