@@ -14,6 +14,6 @@
 
 # Usage:
 1. Make sure `AutoHDR` Is toggled In Windows 11.
-2. Enable `HDR` manually by holding `win+alt`+`b` In Windows 11.
+2. Enable `HDR` manually by holding `win+alt+b` In Windows 11.
 3. Run game.
 4. To make sure `AutoHDR` Is working open `Xbox Game Bar` open `HDR Intensity Slider` and move it around If the brightness keeps shifting means It's working.
