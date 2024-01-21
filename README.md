@@ -17,4 +17,5 @@
 2. Enable `HDR` manually by holding `win+alt+b` In Windows 11.
 3. Run game.
 4. To make sure `AutoHDR` Is working open `Xbox Game Bar` open `HDR Intensity Slider` and move it around If the brightness keeps shifting means It's working.
-5. To Enable and Disable `HDR` automatically for any `process/game` you can use `PyAutoActions` https://github.com/7gxycn08/PyAutoActions/ 
+5. To Enable and Disable `HDR` automatically for any `process/game` you can use
+   `PyAutoActions:`https://github.com/7gxycn08/PyAutoActions/ 
