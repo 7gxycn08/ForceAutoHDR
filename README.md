@@ -4,6 +4,7 @@
 - Add games to `AutoHDR` list In Registry easily using GUI by choosing game executables from filedialog.
 - Remove `Games` easily using Drop Down Menu.
 - Registry entries will be added and removed automatically for you.
+- Entries are added to this path `Software\Microsoft\Direct3D`.
 
 
 
