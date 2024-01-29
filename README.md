@@ -21,4 +21,4 @@
   
   
    **open `HDR Intensity Slider` and move it around If the brightness keeps shifting means It's working.**
-8. **To Enable and Disable `HDR` automatically for any `process/game` you can use [PyAutoActions](https://github.com/7gxycn08/PyAutoActions/) **
+8. **To Enable and Disable `HDR` automatically for any `process/game` you can use [PyAutoActions](https://github.com/7gxycn08/PyAutoActions/)**
