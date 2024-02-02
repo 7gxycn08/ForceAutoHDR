@@ -5,6 +5,7 @@
 - **Remove `Games` easily using Drop Down Menu.**
 - **Registry entries will be added and removed automatically for you.**
 - **Entries are added to this path `Software\Microsoft\Direct3D`.**
+- Doesn't make any connections to the Internet.
 
 
 
