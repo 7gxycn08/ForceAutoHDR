@@ -24,13 +24,6 @@ def add_exe_to_reg():
     registry_path = fr"{base_path}\{key_name}"
     key = None
     try:
-        (winreg.CreateKey
-         (winreg.HKEY_LOCAL_MACHINE, r"Software\Microsoft\Direct3D"))
-        (winreg.CreateKey
-         (winreg.HKEY_LOCAL_MACHINE, r"Software\Microsoft\Direct3D\D3DBehaviors"))
-        (winreg.CreateKey
-         (winreg.HKEY_LOCAL_MACHINE, fr"Software\Microsoft\Direct3D\{key_name}"))
-
         key = winreg.CreateKeyEx(winreg.HKEY_CURRENT_USER, registry_path, 0, winreg.KEY_SET_VALUE)
 
         value_name_str = key_name
