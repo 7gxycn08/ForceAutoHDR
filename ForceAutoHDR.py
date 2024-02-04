@@ -26,7 +26,7 @@ def add_exe_to_reg():
     try:
         key = winreg.CreateKeyEx(winreg.HKEY_CURRENT_USER, registry_path, 0, winreg.KEY_SET_VALUE)
 
-        value_name_str = key_name
+        value_name_str = "Name"
         winreg.SetValueEx(key, value_name_str, 0, winreg.REG_SZ, f"{key_name}.exe")
 
         value_name_str = "D3DBehaviors"
