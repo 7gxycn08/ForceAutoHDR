@@ -1,4 +1,4 @@
-![Github downloads](https://img.shields.io/github/downloads/7gxycn08/ForceAutoHDR/total?label=Github+Downloads)
+![downloads](https://img.shields.io/github/downloads/7gxycn08/ForceAutoHDR/total?label=Github+Downloads)
 
 # ForceAutoHDR
 
