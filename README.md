@@ -26,7 +26,7 @@ AutoHDR is forced for unsupported games without notification popups.
 
 ## Getting Started
 
-To start using ForceAutoHDR, download the latest release from our [GitHub page](https://github.com/7gxycn08/ForceAutoHDR/releases). Install it using the setup file and run the application.
+To start using ForceAutoHDR, download the latest release from our [Releases page](https://github.com/7gxycn08/ForceAutoHDR/releases). Install it using the setup file and run the application.
 
 ## Contributing
 
