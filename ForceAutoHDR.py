@@ -20,7 +20,7 @@ def add_exe_to_reg():
         messagebox.showerror(title="Error.", message="Select EXE to Add.")
         return
     base_path = r"Software\Microsoft\Direct3D"
-    key_name = exe_name.rstrip('.exe')
+    key_name = exe_name.replace(".exe", "")
     registry_path = fr"{base_path}\{key_name}"
     key = None
     try:
@@ -34,10 +34,10 @@ def add_exe_to_reg():
                           "BufferUpgradeOverride=1;BufferUpgradeEnable10Bit=1")
 
         messagebox.showinfo(title="Done.", message="EXE Name Added to Registry.")
-        keys_drop.configure(values=show_Keys())
+        keys_drop.configure(values=show_keys())
         try:
-            keys_drop.set(value=show_Keys()[0])
-        except:
+            keys_drop.set(value=show_keys()[0])
+        except IndexError:
             keys_drop.set(value="No Games Found")
 
     except OSError as e:
@@ -60,7 +60,7 @@ def show_list_in_message_box(mylist):
     messagebox.showinfo("AutoHDR Forced", message)
 
 
-def show_Keys():
+def show_keys():
     path = r"Software\Microsoft\Direct3D"
     try:
         with winreg.OpenKey(winreg.HKEY_CURRENT_USER, path, 0, winreg.KEY_READ | winreg.KEY_WOW64_64KEY) as key:
@@ -83,10 +83,7 @@ def show_Keys():
 
 
 def is_admin():
-    try:
-        return ctypes.windll.shell32.IsUserAnAdmin()
-    except:
-        return False
+    return ctypes.windll.shell32.IsUserAnAdmin()
 
 
 def delete_registry_key(key_name):
@@ -94,7 +91,7 @@ def delete_registry_key(key_name):
     path = r"Software\Microsoft\Direct3D"
     i = messagebox.askyesno(title="Warning.",
                             message=f"Are you sure you want to delete key in path: {path}\\{key_name}")
-    if i == False:
+    if not i:
         return
     else:
         try:
@@ -103,10 +100,10 @@ def delete_registry_key(key_name):
                     winreg.DeleteKey(key, key_name)
                     messagebox.showinfo(title="Done.",
                                         message=f"Registry key '{key_name}' in path '{path}' deleted successfully.")
-                    keys_drop.configure(values=show_Keys())
+                    keys_drop.configure(values=show_keys())
                     try:
-                        keys_drop.set(value=show_Keys()[0])
-                    except:
+                        keys_drop.set(value=show_keys()[0])
+                    except IndexError:
                         keys_drop.set(value="No Games Found")
 
             else:
@@ -132,15 +129,15 @@ customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), da
 
 app = customtkinter.CTk()
 app.geometry("400x240")
-app.title("ForceAutoHDR")
+app.title("ForceAutoHDR v1.0.0.3")
 app.iconbitmap(r"Resources\hdr.ico")
 blank_image = Image.new('RGB', (1, 1))
 
-keys_drop = customtkinter.CTkOptionMenu(master=app, values=show_Keys())
+keys_drop = customtkinter.CTkOptionMenu(master=app, values=show_keys())
 
 try:
-    keys_drop.set(value=show_Keys()[0])
-except:
+    keys_drop.set(value=show_keys()[0])
+except IndexError:
     keys_drop.set(value="No Games Found")
 
 keys_drop.place(relx=0.5, rely=0.2, anchor=customtkinter.CENTER)
