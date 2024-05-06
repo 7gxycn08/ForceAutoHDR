@@ -31,7 +31,7 @@ To start using ForceAutoHDR, download the latest release from our [Releases page
 ![winget](https://github.com/7gxycn08/ForceAutoHDR/assets/121936658/4dd2df30-da47-4dcd-9219-396709fa6f3b)
 
 
-Alternatively you can download and update via [Windows Package Manager (Winget)](https://docs.microsoft.com/en-us/windows/package-manager/winget/):
+Alternatively you can install and update via [Windows Package Manager (Winget)](https://docs.microsoft.com/en-us/windows/package-manager/winget/):
 
 
 `winget install ForceAutoHDR.7gxycn08`
