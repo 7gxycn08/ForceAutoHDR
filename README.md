@@ -28,6 +28,14 @@ AutoHDR is forced for unsupported games without notification popups.
 
 To start using ForceAutoHDR, download the latest release from our [Releases page](https://github.com/7gxycn08/ForceAutoHDR/releases). Install it using the setup file and run the application.
 
+![winget](https://github.com/7gxycn08/ForceAutoHDR/assets/121936658/4dd2df30-da47-4dcd-9219-396709fa6f3b)
+
+
+Alternatively you can download and update via [Windows Package Manager (Winget)](https://docs.microsoft.com/en-us/windows/package-manager/winget/):
+
+
+`winget install ForceAutoHDR.7gxycn08`
+
 ## Contributing
 
 Contributions are welcome! If you have suggestions or want to improve ForceAutoHDR, please feel free to fork the repository, make changes, and submit a pull request. For major changes or discussions, please open an issue first.
