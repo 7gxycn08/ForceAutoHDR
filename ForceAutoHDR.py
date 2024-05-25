@@ -44,8 +44,7 @@ def add_exe_to_reg():
         messagebox.showerror(title="Error", message=f"Error creating registry key: {e}")
         if e.winerror == 87:
             messagebox.showerror(title="Error",
-                                 message=
-                                 "The parameter might be incorrect. "
+                                 message="The parameter might be incorrect. "
                                  "Check if the registry path follows the expected format.")
             messagebox.showerror(title="Error", message=f"Registry Path: {registry_path}")
         else:
@@ -74,7 +73,9 @@ def show_keys():
                 except OSError:
                     break
     except FileNotFoundError:
-        messagebox.showerror(title="Error", message=f"Registry path not found: {path}")
+        keypath = r"Software\Microsoft"
+        with winreg.CreateKey(winreg.HKEY_CURRENT_USER, keypath) as key:
+            winreg.CreateKey(key, 'Direct3D')
         keys = []
     except OSError as os_exception:
         messagebox.showerror(title="Error", message=f"Error accessing registry: {os_exception}")
@@ -129,7 +130,7 @@ customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), da
 
 app = customtkinter.CTk()
 app.geometry("400x240")
-app.title("ForceAutoHDR v1.0.0.3")
+app.title("ForceAutoHDR v1.0.0.4")
 app.iconbitmap(r"Resources\hdr.ico")
 blank_image = Image.new('RGB', (1, 1))
 
@@ -142,13 +143,11 @@ except IndexError:
 
 keys_drop.place(relx=0.5, rely=0.2, anchor=customtkinter.CENTER)
 add_button = customtkinter.CTkButton(master=app, text="Add Game EXE",
-                                     command=
-                                     lambda: threading.Thread(target=lambda: add_exe_to_reg(),
-                                                              daemon=True).start())
+                                     command=lambda: threading.Thread(target=lambda: add_exe_to_reg(),
+                                                                      daemon=True).start())
 add_button.place(relx=0.5, rely=0.65, anchor=customtkinter.CENTER)
 delete_button = customtkinter.CTkButton(master=app, text="Delete Game EXE",
-                                        command=
-                                        lambda: threading.Thread(
+                                        command=lambda: threading.Thread(
                                             target=lambda: delete_registry_key(keys_drop.get()),
                                             daemon=True).start())
 delete_button.place(relx=0.5, rely=0.80, anchor=customtkinter.CENTER)
