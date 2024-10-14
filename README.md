@@ -9,6 +9,7 @@ ForceAutoHDR simplifies the process of adding games to the AutoHDR list in the W
 - **Easy to Use**: Add games to the AutoHDR list with a simple GUI.
 - **Automatic Registry Management**: Automatically adds or removes game entries in the Registry.
 - **Safe**: Does not make any connections to the Internet.
+- **DXVK/VKD3D** Works for games using Vulkan api wrappers.
 
 ![forcegui](https://github.com/7gxycn08/ForceAutoHDR/assets/121936658/8f62b984-d146-4b3e-a8ea-8ce99d834f91)
 
@@ -19,6 +20,17 @@ ForceAutoHDR simplifies the process of adding games to the AutoHDR list in the W
 3. Run your game.
 4. To verify AutoHDR is working, open the Xbox Game Bar, navigate to the HDR Intensity Slider, and adjust it. If the brightness shifts while adjusting the slider, AutoHDR is functioning.
 5. For automatic HDR toggling for any process/game, consider using [PyAutoActions](https://github.com/7gxycn08/PyAutoActions/).
+
+## Windows 11 24H2 Overblown Colors workaround
+
+![24h2 (Github)](https://github.com/user-attachments/assets/bc7124fd-d27c-49a9-a988-e567629e83ee)
+
+To fix games that exhibit such behavior edit 'Engine.ini' which usually are located in 'Appdata/local/(GameFolder)'.
+Adding the variable bellow Defines the default back buffer pixel format and sets it to 16bit RGBA output.
+`
+[/Script/Engine.RendererSettings]
+r.DefaultBackBufferPixelFormat=1
+`
 
 ## Notice
 
