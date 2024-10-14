@@ -9,7 +9,7 @@ ForceAutoHDR simplifies the process of adding games to the AutoHDR list in the W
 - **Easy to Use**: Add games to the AutoHDR list with a simple GUI.
 - **Automatic Registry Management**: Automatically adds or removes game entries in the Registry.
 - **Safe**: Does not make any connections to the Internet.
-- **DXVK/VKD3D** Works for games using Vulkan api wrappers.
+- **DXVK/VKD3D**: Works for games using Vulkan api wrappers.
 
 ![forcegui](https://github.com/7gxycn08/ForceAutoHDR/assets/121936658/8f62b984-d146-4b3e-a8ea-8ce99d834f91)
 
