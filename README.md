@@ -28,7 +28,7 @@ ForceAutoHDR simplifies the process of adding games to the AutoHDR list in the W
 To fix games that exhibit such behavior edit `Engine.ini` which usually are located in `Appdata/local/(GameFolder)`.
 
 
-Adding the variable bellow Defines the default back buffer pixel format and sets it to 16bit RGBA output.
+Adding the variable bellow Defines the default back buffer pixel format and sets it to `16bit RGBA` output.
 
 
 ```
