@@ -20,6 +20,7 @@ ForceAutoHDR simplifies the process of adding games to the AutoHDR list in the W
 3. Run your game.
 4. To verify AutoHDR is working, open the Xbox Game Bar, navigate to the HDR Intensity Slider, and adjust it. If the brightness shifts while adjusting the slider, AutoHDR is functioning.
 5. For automatic HDR toggling for any process/game, consider using [PyAutoActions](https://github.com/7gxycn08/PyAutoActions/).
+6. For permenantly setting CPU Priority/IO Priority/Memory Priority via registry consider using [PrioritySetter](https://github.com/7gxycn08/PrioritySetter/).
 
 ## Windows 11 24H2 Overblown Colors Workaround
 
