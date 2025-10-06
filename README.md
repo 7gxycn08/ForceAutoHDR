@@ -57,7 +57,7 @@ Alternatively you can install and update via [Windows Package Manager (Winget)](
 
 Contributions are welcome! If you have suggestions or want to improve ForceAutoHDR, please feel free to fork the repository, make changes, and submit a pull request. For major changes or discussions, please open an issue first.
 
-[![Buy me a Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/7gxycn08)
+Leave a Star if you like this project.
 
 ## License
 
