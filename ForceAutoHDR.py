@@ -8,7 +8,8 @@ from PySide6.QtWidgets import (
     QMessageBox
 )
 from PySide6.QtCore import Qt, QThread, Signal
-from PySide6.QtGui import QIcon
+from PySide6.QtGui import QIcon, QPalette, QColor
+
 
 # --- DPI Awareness ---
 # noinspection SpellCheckingInspection
@@ -87,7 +88,7 @@ class ForceAutoHDR(QMainWindow):
     def __init__(self):
         super().__init__()
         self.worker = None
-        self.setWindowTitle("ForceAutoHDR v1.0.0.5")
+        self.setWindowTitle("ForceAutoHDR v1.0.0.6")
         self.setFixedSize(400, 240)
 
         # Set Icon (Handles case where file might be missing)
@@ -189,25 +190,37 @@ class ForceAutoHDR(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    app.setStyle("Fusion")
+
+    palette = QPalette()
+    palette.setColor(QPalette.ColorRole.Window, QColor(61, 61, 61))
+    palette.setColor(QPalette.ColorRole.WindowText, Qt.GlobalColor.white)
+    palette.setColor(QPalette.ColorRole.Base, QColor(51, 51, 51))
+    palette.setColor(QPalette.ColorRole.Text, Qt.GlobalColor.white)
+    palette.setColor(QPalette.ColorRole.Button, QColor(43, 43, 43))
+    palette.setColor(QPalette.ColorRole.ButtonText, Qt.GlobalColor.white)
+    palette.setColor(QPalette.ColorRole.Highlight, QColor(31, 83, 141))
+    palette.setColor(QPalette.ColorRole.HighlightedText, Qt.GlobalColor.white)
+    app.setPalette(palette)
 
     # Basic styling to mimic the "Dark Blue" theme
     # noinspection SpellCheckingInspection
     app.setStyleSheet("""
         QMainWindow { background-color: #2b2b2b; }
-        QPushButton { 
-            background-color: #1f538d; 
-            color: white; 
-            border-radius: 5px; 
-            padding: 8px; 
-            font-family: 'Segoe UI'; 
+        QPushButton {
+            background-color: #1f538d;
+            color: white;
+            border-radius: 5px;
+            padding: 8px;
+            font-family: 'Segoe UI';
             font-size: 13px;
         }
         QPushButton:hover { background-color: #2563be; }
-        QComboBox { 
-            background-color: #333333; 
-            color: white; 
-            border: 1px solid #555; 
-            padding: 5px; 
+        QComboBox {
+            background-color: #333333;
+            color: white;
+            border: 1px solid #555;
+            padding: 5px;
             min-width: 200px;
         }
     """)
