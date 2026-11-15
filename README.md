@@ -62,4 +62,4 @@ Leave a Star if you like this project.
 
 ## License
 
-ForceAutoHDR is released under the MIT License. See the [LICENSE](https://github.com/7gxycn08/ForceAutoHDR/blob/main/LICENSE) file for more details.
+ForceAutoHDR is released under the Apache-2.0 license. See the [LICENSE](https://github.com/7gxycn08/ForceAutoHDR/blob/main/LICENSE) file for more details.
